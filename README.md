@@ -4,17 +4,16 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|topic_id1|integer|null: false, foreign_key: true|
-|topic_id2|integer|null: false, foreign_key: true|
+
 
 ### Association
-- has_one :topic
+- has_many :topics
 
 ## topicsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|title|string|null: false|
+|topic|string|null: false|
 |taiketsu_id|string|null: false|
 
 ### Association
@@ -26,6 +25,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |comment|text|null: false|
+|topic_id|integer|null: false, foreign_key: true|
 |good_count|integer||
 |bad_count|integer||
 
