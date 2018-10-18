@@ -4,8 +4,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|topic_id1|text|null: false|
-|topic_id2|text|null: false|
+|topic_id1|text|null: false, foreign_key: true|
+|topic_id2|text|null: false, foreign_key: true|
 
 ### Association
 - has_one :topic
@@ -14,7 +14,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|title|string|null: false, foreign_key: true|
+|title|string|null: false|
+|taiketsu_id|string|null: false|
 
 ### Association
 - belongs_to :taiketsu
