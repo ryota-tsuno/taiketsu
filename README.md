@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## taiketsusテーブル
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|topic_id1|text|null: false|
+|topic_id2|text|null: false|
 
-* Ruby version
+### Association
+- has_one :topic
 
-* System dependencies
+## topicsテーブル
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false, foreign_key: true|
 
-* Database creation
+### Association
+- belongs_to :taiketsu
+- has_many   :comments
 
-* Database initialization
+## commentsテーブル
 
-* How to run the test suite
+|Column|Type|Options|
+|------|----|-------|
+|comment|text|null: false|
+|good_count|integer||
+|bad_count|integer||
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :topic
