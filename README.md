@@ -4,8 +4,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|topic_id1|text|null: false, foreign_key: true|
-|topic_id2|text|null: false, foreign_key: true|
+|topic_id1|integer|null: false, foreign_key: true|
+|topic_id2|integer|null: false, foreign_key: true|
 
 ### Association
 - has_one :topic
