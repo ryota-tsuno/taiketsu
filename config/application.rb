@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Taiketsu
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+    # config.load_defaults 5.2
     config.generators do |g|
       g.javascripts false
       g.helper false
