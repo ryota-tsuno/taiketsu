@@ -5,8 +5,8 @@ html {
     height: 100%;
     word-break: break-all;
     font-size: 14px;
-    background: #eeeeee;
-    color: #222222;
+    background: white;
+    color: $text-black-1;
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -30,7 +30,6 @@ html {
       font-weight: bold;
       font-size: 1.5rem;
       margin-right: 10px;
-      color: #a35747;
     }
     .top_article_vs_wrap {
       position: absolute;
@@ -48,15 +47,15 @@ html {
         transition: 0.4s;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        background: #1f3748;
-        color: #ffffff;
+        background: $circle-bg-1;
+        color: white;
         margin: 10px auto;
       }
     }
     .social {
       padding-top: 10px;
       margin-top: 30px;
-      border-top: 1px solid #e1e1e1;
+      border-top: 1px solid $border-1;
     }
     #craem {
       margin-top: 40px;
@@ -86,7 +85,6 @@ html {
   .top_article .panel>.row {
     padding-top: 20px;
     .top_article_cast {
-      //どういう意味か分からない
       font-size: 2rem;
     }
   }
@@ -136,18 +134,18 @@ html {
   }
   .panel {
     border: none;
-    box-shadow: 0 3px 5px #cccccc; 
+    box-shadow: 0 3px 5px $box-shadow;
     margin-bottom: 1.25rem;
     padding: 0.875rem;
     background: white;
-    color: #333333;
+    color: $text-bkack-2;
     .comment_block:nth-child(even) {
-      background: #f0f0f0;
+      background: $box-child-1;
     }
     .comment_block {
       margin: 0 -0.875rem -1px;
       padding: 10px 20px;
-      background: #ffffff;
+      background: white;
     }
   }
   .single_comments {
@@ -158,13 +156,13 @@ html {
     }
     .comment_primary {
       h3 span {
-        color: #a35747;
+        color: $text-accent-1;
       }
     }
     .comment_secondary {
       h3 {
         span {
-          color: #4f6996; 
+          color: $text-accent-2;
         }
       }
     }
