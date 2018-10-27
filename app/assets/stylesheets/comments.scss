@@ -183,9 +183,6 @@ html {
   .adjustlink {
     margin-bottom: 10px;
   }
-  .top_article {
-    margin-bottom: 10px;
-  }
 }
 
 p {
@@ -211,4 +208,19 @@ p {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+///////////////////////////////////////////////////////
+
+.top_article {
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 60rem;
+  content: " ";
+  display: table;
 }
