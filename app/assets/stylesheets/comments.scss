@@ -203,3 +203,19 @@ p {
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility;
 }
+.text-left {
+  text-align: left !important;
+}
+
+.adjustlink i {
+  margin: 0 10px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
