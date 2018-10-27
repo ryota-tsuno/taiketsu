@@ -136,7 +136,7 @@ html {
   }
   .panel {
     border: none;
-    box-shadow: 0 3px 5px #cccccc; // border-style: solid;
+    box-shadow: 0 3px 5px #cccccc; 
     margin-bottom: 1.25rem;
     padding: 0.875rem;
     background: white;
@@ -157,19 +157,14 @@ html {
       margin-bottom: 1rem;
     }
     .comment_primary {
-      //box-sizing: border-box;
       h3 span {
         color: #a35747;
       }
     }
     .comment_secondary {
-      //box-sizing: border-box;
       h3 {
         span {
-          color: #4f6996; // font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, osaka, 'ＭＳ Ｐゴシック', Arial, sans-serif;
-          // font-weight: bold;
-          // font-size: 1.5rem;
-          // margin-right: 10px;
+          color: #4f6996; 
         }
       }
     }
