@@ -1,89 +1,12 @@
 %html
   %body
     %main
-      .row.adjustlink
-        .columns.large-6.small-12.text-left
-          = link_to "https://taiketsu.co/151/", title:"次の投稿へ" do
-            .fa.fa-arrow-circle-left
-            高知 vs 東京
-              
-        .columns.large-6.small-12.text-right
-          = link_to "https://taiketsu.co/151/", title:"過古の投稿へ" do
-            トヨタ好き vs トヨタ嫌い
-            .fa.fa-arrow-circle-right
-              
-            
-      .row.top_article
-        .columns.large-12.text-center.top_article
-          .panel
-            .row
-              .columns.large-5
-                .top_article_cast
-                  エンジニア
-              .columns.top_article_vs_wrap
-                .top_article_vs
-                  vs
-              .columns.large-5.large-offset-2
-                .top_article_cast
-                  営業
-            .row.social
-              .columns.large-8.text-left
-              .columns.large-4.text-right
+      = render 'detailpage/adjustlink'       
+      = render 'detailpage/top_article' 
       .row.single_comments
-        .columns.large-6.comment_primary
-          .panel
-            .row
-              .columns.large-12
-                %h3
-                  %span
-                    トヨタ好き
-                  からのご意見
-                
-            .comment_block
-              .row
-                .columns.large-12
-                  %p
-                    常に新しいことに挑戦し続け結果を出している優良なメーカーだと思います。
-                    %br
-                      実際に販売台数がそれを物語っている。
-                    ダサいなら売れるわけが無い。売れているということはそれだけそのデザインが受け入れられている証だ。
-              .row
-                .colums.large-12
-
-            .comment_block
-              .row
-                .columns.large-12
-                  %p
-                    常に新しいことに挑戦し続け結果を出している優良なメーカーだと思います。
-                    %br
-                      実際に販売台数がそれを物語っている。
-                    ダサいなら売れるわけが無い。売れているということはそれだけそのデザインが受け入れられている証だ。
-              .row
-                .colums.large-12
-
-        .columns.large-6.comment_secondary
-          .panel
-            .row
-              .columns.large-12
-                %h3
-                  %span
-                    トヨタきらい
-                  からのご意見
-                
-            .comment_block
-              .row
-                .columns.large-12
-                  %p
-                    常に新しいことに挑戦し続け結果を出している優良なメーカーだと思います。
-                    %br
-                      実際に販売台数がそれを物語っている。
-                    ダサいなら売れるわけが無い。売れているということはそれだけそのデザインが受け入れられている証だ。
-              .row
-                .colums.large-12
-
+        = render 'detailpage/comment_primary'
+        = render 'detailpage/comment_secondary'
       .row
         .columns.large-12.text-center
           .small
             投稿できるご意見は200文字以内です。
-      %h3.text-center#craem
-        ご意見募集中のお題
