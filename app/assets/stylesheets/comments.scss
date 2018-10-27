@@ -5,7 +5,7 @@ html {
     height: 100%;
     word-break: break-all;
     font-size: 14px;
-    background: white;
+    background: $body-bg-1;
     color: $text-black-1;
     padding: 0;
     margin: 0;
@@ -182,6 +182,10 @@ html {
   }
   .adjustlink {
     margin-bottom: 10px;
+    a{
+      text-decoration:none;
+      color: $text-accent-3;
+    }
   }
 }
 
@@ -208,19 +212,4 @@ p {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-///////////////////////////////////////////////////////
-
-.top_article {
-  margin-bottom: 10px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  max-width: 60rem;
-  content: " ";
-  display: table;
 }
